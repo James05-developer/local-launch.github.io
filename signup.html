@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create your shop – Local Launch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Local Launch</a>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-card" style="max-width: 560px;">
+      <h1>Open your online shop</h1>
+      <p>Free to start. Fill in your details and we'll set up your shop page.</p>
+
+      <form action="dashboard.html" method="post">
+        <label>Shop name
+          <input type="text" name="shop" placeholder="e.g. Sharma General Store" required>
+        </label>
+        <div class="form-two">
+          <label>Your name
+            <input type="text" name="owner" autocomplete="name" required>
+          </label>
+          <label>Mobile number
+            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" autocomplete="tel" required>
+          </label>
+        </div>
+        <div class="form-two">
+          <label>City
+            <input type="text" name="city" required>
+          </label>
+          <label>What do you sell?
+            <select name="category" required>
+              <option value="">Choose one</option>
+              <option>Grocery</option>
+              <option>Clothes</option>
+              <option>Medicines</option>
+              <option>Electronics</option>
+              <option>Sweets and bakery</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <label>Shop address
+          <input type="text" name="address" autocomplete="street-address" required>
+        </label>
+        <div class="form-two">
+          <label>Password
+            <input type="password" name="password" minlength="6" autocomplete="new-password" required>
+          </label>
+          <label>Confirm password
+            <input type="password" name="confirm" minlength="6" autocomplete="new-password" required>
+          </label>
+        </div>
+        <div class="auth-row">
+          <label><input type="checkbox" name="terms" required> I agree to the <a href="#">terms</a></label>
+        </div>
+        <button class="btn" type="submit">Create my shop</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+</body>
+</html>

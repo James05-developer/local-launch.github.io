@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My shop – Local Launch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Local Launch</a>
+    <nav>
+      <a href="index.html#preview">View my shop</a>
+      <a class="btn btn-small" href="login.html">Log out</a>
+    </nav>
+  </header>
+
+  <div class="dash">
+    <aside class="sidebar">
+      <div class="shop-name">Sharma General Store</div>
+      <a class="active" href="#overview">Overview</a>
+      <a href="#add">Add product</a>
+      <a href="#products">My products</a>
+      <a href="#orders">Orders</a>
+    </aside>
+
+    <main class="dash-main">
+      <section id="overview">
+        <h1 style="font-size: 2rem;">Good morning</h1>
+        <div class="stats">
+          <div class="stat"><b>3</b><span>New orders today</span></div>
+          <div class="stat"><b>24</b><span>Products listed</span></div>
+          <div class="stat"><b>₹4,820</b><span>Sales this week</span></div>
+        </div>
+      </section>
+
+      <section id="add" class="panel">
+        <h2>Add a product</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <label>Product name
+            <input type="text" name="name" placeholder="e.g. Atta 5 kg" required>
+          </label>
+          <div class="form-two">
+            <label>Price (₹)
+              <input type="number" name="price" min="0" required>
+            </label>
+            <label>Stock available
+              <input type="number" name="stock" min="0" required>
+            </label>
+          </div>
+          <label>Category
+            <select name="category">
+              <option>Grocery</option>
+              <option>Clothes</option>
+              <option>Medicines</option>
+              <option>Electronics</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Photo
+            <input type="file" name="photo" accept="image/*">
+          </label>
+          <label>Description (optional)
+            <textarea name="description" rows="3"></textarea>
+          </label>
+          <div><button class="btn" type="submit">Save product</button></div>
+        </form>
+      </section>
+
+      <section id="products" class="panel">
+        <h2>My products</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Product</th><th>Price</th><th>Stock</th><th>Status</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Atta 5 kg</td><td>₹245</td><td>40</td><td><span class="tag">In stock</span></td><td><button class="link-btn">Edit</button></td></tr>
+              <tr><td>Toor dal 1 kg</td><td>₹160</td><td>18</td><td><span class="tag">In stock</span></td><td><button class="link-btn">Edit</button></td></tr>
+              <tr><td>Mustard oil 1 L</td><td>₹175</td><td>0</td><td><span class="tag tag-out">Sold out</span></td><td><button class="link-btn">Edit</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="orders" class="panel">
+        <h2>Recent orders</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Gurpreet Singh</td><td>Atta 5 kg, Toor dal 1 kg</td><td>₹405</td><td>Cash on delivery</td></tr>
+              <tr><td>Anita Verma</td><td>Tea leaves 500 g</td><td>₹210</td><td>UPI</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

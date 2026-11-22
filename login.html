@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in – Local Launch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Local Launch</a>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <h1>Log in to your shop</h1>
+      <p>Welcome back. Enter your mobile number and password.</p>
+
+      <form action="dashboard.html" method="post">
+        <label>Mobile number
+          <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" autocomplete="tel" required>
+        </label>
+        <label>Password
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <div class="auth-row">
+          <label><input type="checkbox" name="remember"> Keep me logged in</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button class="btn" type="submit">Log in</button>
+      </form>
+
+      <p class="auth-switch">New here? <a href="signup.html">Create your shop account</a></p>
+    </div>
+  </main>
+
+</body>
+</html>
